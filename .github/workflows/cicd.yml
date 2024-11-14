@@ -65,7 +65,7 @@ jobs:
 
       - name: Run tests with pytest
         run: |
-          python -m pytest test_health_calculator.py -v
+          python -m pytest test.py -v
 
   deploy:
     runs-on: ubuntu-latest

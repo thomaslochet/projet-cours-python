@@ -12,7 +12,7 @@ init:
 # Run tests
 test:
 	@echo "Running tests..."
-	python -m pytest test_health_calculator.py -v || exit 1
+	python -m pytest test.py -v || exit 1
 
 # Run the application locally
 run:
@@ -28,9 +28,3 @@ build:
 docker-run:
 	@echo "Running Docker container..."
 	docker run -p $(PORT):$(PORT) $(IMAGE_NAME)
-
-# Clean up
-clean:
-	@echo "Cleaning up..."
-	find . -type f -name "*.pyc" -delete
-	find . -type d -name "__pycache__" -delete

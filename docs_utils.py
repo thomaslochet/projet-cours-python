@@ -12,6 +12,7 @@ def get_api_docs_template():
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
+            text-align: center;
         }
         pre {
             background: #f4f4f4;
@@ -19,12 +20,14 @@ def get_api_docs_template():
             padding: 15px;
             border-radius: 3px;
             overflow-x: auto;
+            text-align: left;
         }
         .endpoint {
             margin: 30px 0;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            text-align: left;
         }
         h2 { color: #333; }
         .method { 
@@ -86,6 +89,10 @@ def get_api_docs_template():
         "gender": "male"
     }'</pre>
     </div>
+
+    <footer>
+        <p>Thomas Lochet - 2024</p>
+    </footer>
 </body>
 </html>
 """
