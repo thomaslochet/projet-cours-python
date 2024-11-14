@@ -12,7 +12,7 @@ init:
 # Run tests
 test:
 	@echo "Running tests..."
-	python -m pytest test_health_calculator.py -v
+	python -m pytest test_health_calculator.py -v || exit 1
 
 # Run the application locally
 run:
