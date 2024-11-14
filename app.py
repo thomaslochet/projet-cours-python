@@ -1,7 +1,14 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template_string 
 from health_utils import calculate_bmi, calculate_bmr
+from docs_utils import get_api_docs_template
+
 
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    """Serve API documentation"""
+    return render_template_string(get_api_docs_template())
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -72,4 +79,4 @@ def get_bmi_category(bmi):
         return "Obese"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001)
+    app.run(host='0.0.0.0', port=5000)
