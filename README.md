@@ -4,6 +4,8 @@ Author : *Thomas Lochet*
 
 A Flask-based REST API for calculating health metrics like BMI (Body Mass Index) and BMR (Basal Metabolic Rate).
 
+Link: https://projet-cours-python-thomas-lochet.azurewebsites.net
+
 ## Features
 
 - BMI (Body Mass Index) calculation
